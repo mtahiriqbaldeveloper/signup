@@ -1,0 +1,113 @@
+.styledForm {
+    display: grid;
+    grid-template-columns: 22rem;
+    grid-template-rows: auto;
+    row-gap: 15px;
+    width: 100%;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    font-weight: 400;
+  }
+  
+  h1 {
+    font-size: 2rem;
+  }
+  
+  input {
+    width: 100%;
+    max-width: 21rem;
+    box-shadow: 0;
+    height: 30px;
+    background-color: hsla(0, 4%, 98%, 1);
+    padding: 0.8em 0.5em;
+    font-size: 16px;
+    border: 1px solid #bccadc;
+    border-radius: 4px;
+    color: #000;
+    font-weight: 400;
+  }
+  
+  .container {
+    display: grid;
+    grid-template-columns: 22rem;
+    grid-template-rows: auto;
+    row-gap: 15px;
+  }
+  
+  @media (min-width: 900px) {
+    .styledForm {
+      grid-template-columns: 30rem;
+      grid-template-rows: auto;
+      row-gap: 15px;
+    }
+  
+    input {
+      width: 100%;
+      max-width: 28.9rem;
+    }
+  
+    .container {
+      display: grid;
+      grid-gap: 10px;
+      grid-template-columns: repeat(2, calc(57.3% - 40px));
+      width: 100%;
+      height: auto;
+    }
+  
+    .names > input {
+      width: 100%;
+      max-width: 13.5rem;
+    }
+  
+    .error-title {
+      margin-top: 0px;
+    }
+  }
+  
+  .btn {
+    min-width: 180px;
+    cursor: pointer;
+    white-space: nowrap;
+    margin-left: auto;
+    height: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    border: 1px solid #264ab1;
+    background: #264ab1;
+    border-radius: 5px;
+    color: white;
+    padding: 8px 24px;
+    transition: 0.3s;
+  }
+  
+  .btn:hover,
+  .btn:focus {
+    border: 1px solid #264ab1;
+    background: #264ab1;
+    transform: translateY(-2px);
+  }
+  
+  .btn:active {
+    box-shadow: 0px 4px 6px hsla(210, 31%, 80%, 0.5),
+      0px 2px 4px hsla(210, 31%, 80%, 0.55);
+    outline: 0;
+  }
+  
+  .error {
+    border: 1px solid red !important;
+    background-color: rgba(217, 57, 0, 0.1);
+  }
+  
+  .error-title {
+    font-size: 0.4em;
+    color: red;
+    font-weight: 600;
+    margin-top: 5px;
+  }
+  
